@@ -1,0 +1,22 @@
+<app-nav></app-nav>
+
+<div class="container">
+   <form (ngSubmit)="guardarCadena(text.value)">
+     <div class="form-group">
+       <h1>Guardar una Tarea</h1>
+       <label for="">Ingresar Tarea</label>
+       <input #text type="text" class="form-control">
+     </div>
+     <div class="alert alert-primary" role="alert">
+        {{cadena}}
+
+   </div>
+     <button  type="submit" class="btn btn-primary">Guardar</button>
+     <button (click)="mostrarCadena()" class="btn btn-success m-1">VER TAREAS</button>
+   </form>
+ </div>
+
+
+
+ <app-footer></app-footer>
+<router-outlet></router-outlet>
