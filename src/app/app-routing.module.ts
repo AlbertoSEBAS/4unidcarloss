@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Routes, RouterModule} from '@angular/router';
-import { TareasComponent} from './componentes/tareas/tareas.component';
-import { NotasComponent} from './componentes/notas/notas.component';
+import { Routes, RouterModule } from '@angular/router';
+import { TareaComponent } from './components/tarea/tarea.component';
+import { NotaComponent } from './components/nota/nota.component';
 
 
 const routes: Routes = [
-   {path: 'Tareas', component: TareasComponent},
-   {path: 'Notas', component: NotasComponent},
-   
-   {path: '**', pathMatch: 'full', redirectTo:'Tareas'},
+  { path: 'tarea', component: TareaComponent },
+    { path: 'nota', component: NotaComponent },
+    { path: '**', pathMatch: 'full', redirectTo: 'tareas' }
 ];
+export const APP_ROUTING = RouterModule.forRoot(routes);
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

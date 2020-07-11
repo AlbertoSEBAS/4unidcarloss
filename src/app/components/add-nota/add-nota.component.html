@@ -1,0 +1,10 @@
+<div *ngFor="let notas of notaService.nota ">
+
+<div class="card border-success mb-10" style="max-width: 25rem;">
+  <div class="card-header text-success bg-transparent border-success">AQUI TU NOTA</div>
+  <div class="card-body text-success">
+    <h5 class="card-title">{{notas.titulo}}</h5>
+    <p class="card-text">{{notas.descripcion}}</p>
+  </div>
+  <div class="card-footer bg-transparent border-success">NOTA LISTA</div>
+</div>

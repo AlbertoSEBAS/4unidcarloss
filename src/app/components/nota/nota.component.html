@@ -1,0 +1,36 @@
+<br>
+<br>
+<br>
+<br>
+<div class="mb-3 animated fadeIn fast">
+  <div class="input-group is-invalid">
+      <div class="input-group-prepend">
+          <span class="input-group-text" id="validatedInputGroupPrepend">Agregar Título</span>
+      </div>
+      <input id="text" type="text" class="form-control" #titulo required autofocus>
+  </div>
+  <br>
+  <br>
+  <div class="input-group is-invalid">
+      <div class="input-group-prepend">
+          <br>
+          <br>
+          <br>
+          <span class="input-group-text" id="validatedInputGroupPrepend">Agregar Descripción</span>
+      </div>
+      <textarea id="text" type="text" class="form-control" #descri required autofocus></textarea>
+  </div>
+  <br>
+  <div class="input-group-append">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <button class="btn btn-primary btn-lg btn-block " (click)='agregarNota(titulo.value, descri.value)' type="button">Agregar Nota</button>
+  </div>
+
+</div>
+<div class="card-columns">
+  <my-org-add-nota class="animated fadeIn fast"></my-org-add-nota>
+</div>
